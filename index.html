@@ -1,144 +1,79 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Qodim Baligh Ghoni</title>
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      margin: 0;
-      background: #f8f9fa;
-      color: #222;
-    }
-    header {
-      background: #0d6efd;
-      color: white;
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin-top: .5rem;
-      font-size: 1.1rem;
-    }
-    section {
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
-    h2 {
-      border-left: 5px solid #0d6efd;
-      padding-left: 10px;
-    }
-    .skills, .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-    .skill, .project {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      padding: 1.5rem;
-      transition: transform .2s ease;
-    }
-    .skill:hover, .project:hover {
-      transform: translateY(-5px);
-    }
-    .project img {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: .8rem;
-    }
-    footer {
-      text-align: center;
-      background: #0d6efd;
-      color: white;
-      padding: 2rem 1rem;
-      margin-top: 3rem;
-    }
-    a.button {
-      display: inline-block;
-      background: #0d6efd;
-      color: white;
-      padding: .5rem 1rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    a.button:hover {
-      background: #084298;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qodim Baligh Ghoni — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header>
-    <h1>Qodim Baligh Ghoni</h1>
-    <p>PHP & Web Developer | CodeIgniter 4 | MySQL | Front-End Enthusiast</p>
+  <button id="theme-toggle">🌙</button>
+
+  <header class="hero container">
+    <div class="hero-text">
+      <h1>Qodim <span class="accent">Baligh Ghoni</span></h1>
+      <p class="subtitle">PHP & Web Developer — CodeIgniter 4 • MySQL • AWS • Git</p>
+      <p class="desc">Lulusan S1 Sistem Informasi (IPK 3.78). Saya membangun aplikasi web yang efisien dan handal menggunakan PHP, CodeIgniter, dan MySQL.</p>
+      <div class="buttons">
+        <a href="#projects" class="btn">Lihat Proyek</a>
+        <a href="#contact" class="btn ghost">Kontak</a>
+        <a href="CV_Qodim_Baligh_Ghoni.pdf" download class="btn outline">Download CV</a>
+      </div>
+      <div class="links">
+        <a href="https://github.com/qodim" target="_blank">GitHub</a> · 
+        <a href="mailto:odimbaligh@gmail.com">Email</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/photo.jpg" alt="Foto Qodim">
+    </div>
   </header>
 
-  <section id="about">
-    <h2>Tentang Saya</h2>
-    <p>
-      Halo! Saya <strong>Qodim (Odim)</strong>, seorang Web Developer yang berfokus pada pengembangan aplikasi berbasis PHP.
-      Saya berpengalaman menggunakan <b>CodeIgniter 4</b> dan <b>MySQL</b> untuk membangun sistem informasi sekolah,
-      khususnya dalam proyek seperti <i>Sistem Informasi Manajemen Perpustakaan Digital</i>.
-    </p>
-  </section>
+  <main class="container">
+    <section class="section reveal" id="about">
+      <h2>Tentang Saya</h2>
+      <p>Saya memiliki pengalaman dalam pengembangan aplikasi web berbasis PHP dan CodeIgniter 4. Fokus saya pada membangun sistem informasi yang mudah digunakan, aman, dan scalable.</p>
+    </section>
 
-  <section id="skills">
-    <h2>Keahlian</h2>
-    <div class="skills">
-      <div class="skill">PHP (CodeIgniter 4)</div>
-      <div class="skill">HTML, CSS, JavaScript</div>
-      <div class="skill">Bootstrap</div>
-      <div class="skill">MySQL Database</div>
-      <div class="skill">Git & GitHub</div>
-      <div class="skill">REST API</div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Proyek Saya</h2>
-    <div class="projects">
-      <div class="project">
-        <img src="https://via.placeholder.com/400x200?text=Perpustakaan+Digital" alt="Sistem Perpustakaan Digital">
-        <h3>Sistem Informasi Manajemen Perpustakaan Digital</h3>
-        <p>Aplikasi berbasis web untuk mengelola data buku, anggota, dan peminjaman dengan fitur cetak PDF, laporan Excel, serta integrasi barcode.</p>
-        <p><b>Teknologi:</b> PHP, CodeIgniter 4, MySQL, Bootstrap</p>
-        <a href="https://github.com/qodim/perpustakaan-ci4" class="button" target="_blank">Lihat di GitHub</a>
+    <section class="section reveal" id="skills">
+      <h2>Keahlian</h2>
+      <div class="skills">
+        <span>PHP</span><span>CodeIgniter 4</span><span>MySQL</span><span>HTML</span><span>CSS</span>
+        <span>JavaScript</span><span>Bootstrap</span><span>Git</span><span>AWS</span><span>REST API</span>
       </div>
+    </section>
 
-      <div class="project">
-        <img src="https://via.placeholder.com/400x200?text=Project+Magang" alt="Proyek Magang Intelix">
-        <h3>Proyek Magang di Intelix</h3>
-        <p>Mengembangkan logika backend dan integrasi database menggunakan PHP untuk sistem internal perusahaan.</p>
-        <p><b>Teknologi:</b> PHP, MySQL</p>
+    <section class="section reveal" id="projects">
+      <h2>Proyek</h2>
+      <div class="projects">
+        <div class="project">
+          <img src="https://via.placeholder.com/800x400?text=Perpustakaan+Digital" alt="Sistem Perpustakaan">
+          <h3>Sistem Informasi Manajemen Perpustakaan</h3>
+          <p>Aplikasi web untuk mengelola buku, anggota, peminjaman, laporan Excel, dan cetak struk PDF dengan integrasi barcode.</p>
+          <p class="meta">PHP • CodeIgniter 4 • MySQL • Bootstrap</p>
+          <a href="https://github.com/qodim/perpustakaan-ci4" target="_blank">Lihat di GitHub</a>
+        </div>
+
+        <div class="project">
+          <img src="https://via.placeholder.com/800x400?text=Magang+Intelix" alt="Proyek Magang Intelix">
+          <h3>Proyek Magang di PT. Intelix Global Crossing</h3>
+          <p>Mengembangkan fitur backend PHP dan integrasi API pada sistem internal perusahaan.</p>
+          <p class="meta">PHP • MySQL • Git</p>
+        </div>
       </div>
+    </section>
 
-      <div class="project">
-        <img src="https://via.placeholder.com/400x200?text=Website+Portfolio" alt="Website Portfolio">
-        <h3>Website Portfolio Pribadi</h3>
-        <p>Website sederhana yang menampilkan profil, keahlian, dan proyek-proyek yang pernah saya kerjakan.</p>
-        <p><b>Teknologi:</b> HTML, CSS, GitHub Pages</p>
-      </div>
-    </div>
-  </section>
+    <section class="section reveal" id="contact">
+      <h2>Kontak</h2>
+      <p>Ingin bekerja sama? Kirim pesan ke <a href="mailto:odimbaligh@gmail.com">odimbaligh@gmail.com</a></p>
+    </section>
+  </main>
 
-  <section id="contact">
-    <h2>Kontak</h2>
-    <p>📧 Email: <a href="mailto:qodimbalighghoni@gmail.com">qodimbalighghoni@gmail.com</a></p>
-    <p>💻 GitHub: <a href="https://github.com/qodim" target="_blank">github.com/qodim</a></p>
-    <p>🔗 LinkedIn: <a href="#" target="_blank">linkedin.com/in/qodim</a></p>
-  </section>
-
-  <footer>
-    &copy; 2025 Qodim Baligh Ghoni. Dibuat dengan ❤️ menggunakan HTML & CSS.
+  <footer class="footer">
+    <p>© 2025 Qodim Baligh Ghoni M</p>
   </footer>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>
